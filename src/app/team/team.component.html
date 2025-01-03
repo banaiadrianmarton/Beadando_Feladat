@@ -1,0 +1,49 @@
+@if (model) {
+    <div class="modal" tabindex="-1" style="display: block;">
+        <div class="modal-dialog">
+        <div class="modal-content transparent-card">
+            <div class="modal-header">
+            <h5 class="modal-title">Adatok rögzítése</h5>
+            <button type="button" class="btn-close" (click)="model = undefined"></button>
+            </div>
+            <div class="modal-body ">
+                <form>
+                    <div class="mb-3">
+                        <label for="teamName" class="form-label">Csapatnév</label>
+                        <input type="text" class="form-control" id="teamName"
+                               [value]="model.teamName" (change)="model.teamName = getValue($event)"  >
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Kategória</label>
+                        <select class="form-select" id="category" [value]="model.gameCategory" (change)="model.gameCategory = getValue($event)">
+                            <option selected>Válassz...</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Shooter">Shooter</option>
+                            <option value="Strategy">Strategy</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Puzzle">Puzzle</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Horror">Horror</option>
+                            <option value="MMORPG">MMORPG</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="teamLeader" class="form-label">Csapatvezető neve</label>
+                        <input type="text" class="form-control" id="teamLeader"
+                               [value]="model.player" (change)="model.player= getValue($event)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="teamLeaderEmail" class="form-label">E-mail cím</label>
+                        <input type="email" class="form-control" id="teamLeaderEmail"
+                               [value]="model.email" (change)="model.email = getValue($event)">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" (click)="model = undefined">Mégsem</button>
+            <button type="button" class="btn btn-success" (click)="save()">Mentés</button>
+            </div>
+        </div>
+        </div>
+    </div>
+}

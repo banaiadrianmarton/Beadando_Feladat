@@ -1,0 +1,96 @@
+td span,
+tr span {
+  cursor: pointer;
+}
+
+.icon {
+  &:hover {
+    scale: 1.05;
+  }
+
+  &:active {
+    scale: 0.95;
+  }
+}
+
+.btn-primary {
+  display: flex;
+  gap: .5em;
+  padding: .5em 1em;
+  border: none;
+  transition: all ease-out 250ms;
+  border-radius: 12px;
+  font-weight: 600;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  &:active {
+    scale: 0.95;
+  }
+}
+
+.action-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: .25em;
+}
+
+.action-icons button {
+  padding: .25em .5em;
+  border: none;
+  transition: all ease-out 250ms;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.action-icons .delete {
+  background-color: rgb(153, 0, 0);
+  color: white;
+}
+
+
+.action-icons button svg {
+  width: 20px;
+}
+
+
+.transparent-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1em 1em;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+table {
+  color: white;
+}
+
+table * {
+  border: none;
+}
+
+th {
+  padding: 0.2em 1em;
+  background-color: rgba(41, 41, 41, 0.308);
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+
+  &:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+td {
+  padding: 0.5em 1em;
+}
