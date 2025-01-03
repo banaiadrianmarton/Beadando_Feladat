@@ -1,0 +1,25 @@
+{
+  "players": [
+    {
+      "id": "3",
+      "player": "Bob Johnson",
+      "gameCategory": "Sports",
+      "email": "bobjohnson@example.com",
+      "teamName": "Speedsters"
+    },
+    {
+      "id": "4",
+      "player": "Alice Brown",
+      "gameCategory": "Strategy",
+      "email": "alicebrown@example.com",
+      "teamName": "Chess Masters"
+    },
+    {
+      "id": "5",
+      "player": "Charlie Green",
+      "gameCategory": "Puzzle",
+      "email": "charliegreen@example.com",
+      "teamName": "Brainiacs"
+    }
+  ]
+}
